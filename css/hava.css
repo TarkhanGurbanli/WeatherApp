@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.preloader img {
+  position: absolute;
+  top: 50%;
+  z-index: 500;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+body .logo h1 {
+  position: absolute;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+  background: #87c3c7;
+  background-image: linear-gradient(90deg, #f7fcf0, #e5f5df, #d4eece, #bde5bf, #9fd9bb, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
+  padding: 10px 30px 20px 30px;
+  border-radius: 0px 0px 20px 20px;
+  color: #262626;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body .weather {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.525);
+  border-radius: 30px;
+}
+body .weather .search-input {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+body .weather .search-input input {
+  width: 300px;
+  outline: none;
+  height: 40px;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  padding-left: 20px;
+}
+body .weather .search-input button {
+  padding: 7.5px 15px 7.5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  margin-right: 20px;
+  background: #87c3c7;
+  background-image: linear-gradient(90deg, #f7fcf0, #e5f5df, #d4eece, #bde5bf, #9fd9bb, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
+}
+body .weather .weather-info {
+  color: rgb(27, 20, 20);
+}
+body .weather .weather-info span {
+  font-weight: 500;
+}
+body .weather .weather-info p {
+  font-weight: 500;
+}
+body .weather .weather-info h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body #toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  z-index: 0;
+  height: 60px;
+  background: #87c3c7;
+  background-image: linear-gradient(90deg, #f7fcf0, #e5f5df, #d4eece, #bde5bf, #9fd9bb, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+}
+body #toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #262626;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+body #toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #262626;
+  transform: translateY(5px);
+  transition: 0.3s;
+}
+
+#toggle.active::before {
+  transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  z-index: 0;
+  background: #f7fcf0;
+  border-radius: 0px 20px 20px 0px;
+  transition: 0.5s;
+  border-right: 2px solid #399cc6;
+  padding: 0px 20px;
+}
+#sidebar ul {
+  position: relative;
+  top: 100px;
+  left: 0;
+  padding: 0px;
+}
+#sidebar ul li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0px;
+  transition: 0.3s;
+  padding: 10px 40px;
+  border-bottom: 1px solid;
+}
+#sidebar ul li:hover {
+  background: #87c3c7;
+  background-image: linear-gradient(90deg, #f7fcf0, #e5f5df, #d4eece, #bde5bf, #9fd9bb, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
+}
+#sidebar ul li a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#sidebar.activeside {
+  left: 0px;
+}/*# sourceMappingURL=hava.css.map */

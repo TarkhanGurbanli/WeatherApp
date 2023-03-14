@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#chat {
+  width: 350px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px 20px 10px 10px;
+}
+#chat header {
+  background-color: #087F6B;
+  padding: 10px 20px;
+  border-radius: 20px 20px 0 0;
+}
+#chat header .head-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#chat header .head-top button {
+  margin: 0px 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#chat header .head-top button i {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 15px;
+}
+#chat header .head-top span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+#chat header .head-bottom p {
+  display: block;
+}
+#chat main {
+  height: 410px;
+  overflow-y: scroll;
+  background-color: #E6DFD8;
+}
+#chat main .message.support {
+  background-color: #DDF0D4;
+  float: right;
+  border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  clear: both;
+  max-width: 80%;
+  margin: 5px 0px;
+  margin-right: 20px;
+  position: relative;
+}
+#chat main .message.support::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #DDF0D4;
+}
+#chat main .message.support span {
+  margin-top: 10px;
+}
+#chat main .message.support .time {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 12px;
+}
+#chat main .message.user {
+  background-color: #fff;
+  float: left;
+  border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  clear: both;
+  max-width: 80%;
+  position: relative;
+  margin: 5px 0px;
+  margin-left: 10px;
+}
+#chat main .message.user::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 100%;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+#chat main .message.user span {
+  margin-top: 10px;
+}
+#chat main .message.user .time {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 12px;
+}
+#chat footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 5px;
+  border: 1px solid;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+#chat footer .message-text {
+  position: absolute;
+  left: 21px;
+  width: 80%;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+#chat footer .emoji {
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+#chat footer .dosya {
+  position: absolute;
+  right: 30px;
+  margin: 0px 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#chat footer .camera {
+  position: absolute;
+  right: 0;
+  margin: 0px 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.triangle {
+  border-top: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid white;
+  width: 0;
+}/*# sourceMappingURL=chat.css.map */

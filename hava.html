@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetaher</title>
+    <link rel="stylesheet" href="./css/hava.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css' integrity='sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w==' crossorigin='anonymous'/>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+</head>
+<body>
+
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">WeatherApi</a></li>
+            <li><a href="#">ValyutaApi</a></li>
+            <li><a href="#">MovieApi</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a target="_blank" href="./slider.html">Slider</a></li>
+            <li><a target="_blank" href="./chat.html">Chat</a></li>
+
+        </ul>
+    </div>
+
+    <!-- PRELOADER START -->
+
+    <div class="preloader">
+        <img src="./images/e77a6068aa8bb2731e3b6d835c09c84c.gif" alt="" width="200">
+    </div>
+    
+    <!-- PRELOADER END END -->
+
+    <!-- LOGO START -->
+    <div class="logo">
+        <h1>Weather</h1>
+    </div>
+
+    <!-- LOGO END END END -->
+
+    <!-- WEATHER MENU START -->
+<div class="weather">
+    <div class="search-input">
+        <input class="myinput" type="text"> 
+
+        <button onclick="mybtns()" class="mybtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="weather-info">
+        <h2 class="city d-flex align-items-center">Weather in Baku</h2>
+        <h3 class="temperature">52 °C</h3>
+        <div class="weather-img">
+            <img src="" alt="">
+            <span>Cloudy</span>
+        </div>
+        <br>
+        <p class="humid">Humidity: 80%</p>
+         <p class="speed">Speed: 3 km/hour</p>
+    </div>
+</div>
+<!-- WEATHER MENU END END END  -->
+    <script src="./js/hava.js"></script>
+</body>
+</html>

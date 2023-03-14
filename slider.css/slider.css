@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+body header {
+  height: 100vh;
+  width: 100%;
+  background: #a84a73;
+  background-image: linear-gradient(90deg, #0d0887, #41049d, #6a00a8, #8f0da4, #b12a90, #cb4679, #e16462, #f1834c, #fca636, #fcce25, #fcce25);
+}
+body header .logo h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #87c3c7;
+  background-image: linear-gradient(90deg, #f7fcf0, #e5f5df, #d4eece, #bde5bf, #9fd9bb, #7bcbc4, #58b7cd, #399cc6, #1e7eb7, #0b60a1, #0b60a1);
+  padding: 10px 30px 20px 30px;
+  border-radius: 0px 0px 20px 20px;
+  color: #262626;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: animate 1s linear forwards;
+}
+body .slider {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .slider .slide {
+  display: flex;
+  width: 100%;
+  transition: 2s;
+}
+body .slider .slide img {
+  height: 500px;
+  width: 800px;
+  border-radius: 30px;
+  border: 3px solid #fff;
+}
+body .slider .slides {
+  height: 500px;
+  overflow: hidden;
+}
+body .slider .slides input {
+  display: none;
+}
+body .navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+body .navigation-manual .manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+body .navigation-manual .manual-btn:not(:last-child) {
+  margin-right: 25px;
+}
+body .navigation-manual .manual-btn:hover {
+  background: #fff;
+}
+body #radio1:checked ~ .first {
+  margin-left: 0;
+}
+body #radio2:checked ~ .first {
+  margin-left: -100%;
+}
+body #radio3:checked ~ .first {
+  margin-left: -200%;
+}
+body #radio4:checked ~ .first {
+  margin-left: -300%;
+}/*# sourceMappingURL=slider.css.map */
